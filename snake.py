@@ -6,6 +6,7 @@ pygame.display.set_caption('Snake Game By David Kihara')
 game_over=False
 while not game_over:
     for event in pygame.event.get():
-        print(event)
+        if event.type==pygame.QUIT:
+            game_over=True
 pygame.quit()
 quit()
